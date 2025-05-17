@@ -44,7 +44,10 @@ or with command line arguments:
 python ./script/warehouse_map_generator.py --mapWidth 200 --mapHeight 140 --output "sortation_medium.map" --stationConfig "sortation_emitter.txt" --storageSize 1 1 --stationDistance 1
 ```
 
+comment:  原来warehouse地图也是生成的。
+
 ## Warehouse Task Generator
+
 The script `warehouse_task_generator.py` generates customized task sets for warehouse maps. Tasks are distributed according to different probabilistic models. 
 
 ### Distribution Types
