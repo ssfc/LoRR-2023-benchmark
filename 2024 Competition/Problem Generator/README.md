@@ -10,6 +10,7 @@ Requirements:
 - easydict
 - pyyaml
   
+
 To get started with the scripts, you need to install the package. You can install it using pip:
 ```shell
 pip install easydict
@@ -18,7 +19,7 @@ pip install pyyaml
 
 ## Benchmark Generator
 
-The script `benchmark_generator.py` is used to create new problem instances. At a minimum, the program requires as input a map file, the sizes of agent teams, and the description of the task set. In the simplest usage, only the size of the task set is required and individual errands are randomly generated. We show this usage below:
+The script `benchmark_generator.py` is used to create new problem instances. At a minimum, the program requires as input a map file, the sizes of agent teams（comment:  agent数量）, and the description of the task set. In the simplest usage, only the size of the task set is required and individual errands are randomly generated. We show this usage below:
 
 ```shell
 python ./script/benchmark_generator.py  --mapFile  ./script/sortation_large.map --revealNum 1   --problemName randomTest --taskNum 5 --teamSizes 100 200 300 --benchmark_folder ./test --minEPT 1 --maxEPT 5
