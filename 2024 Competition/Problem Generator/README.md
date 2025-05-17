@@ -55,7 +55,10 @@ The script `warehouse_task_generator.py` generates customized task sets for ware
 - **Inverse Fullfilment**: Favors distant storage locations, leading to contraflows (`--inverse`).
 - **Biased Emitters**: Prioritizes specific `E` locations (`--e_biases`).
 
+comment:  原来分布还不一样，看来生成逻辑比较复杂了。
+
 ### Probability Calculation
+
 Probabilities are assigned based on distance-based bucketing:
 1. **Bucketing**: Storage locations (`S`) are grouped into categories based on their Manhattan distance to the emitters (`E`). These categories define which locations are considered near or far. The following images are two examples of the buckets: [Left] 10 buckets, [Right] 20 buckets.
 
